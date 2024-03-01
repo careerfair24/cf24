@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Google Form Redirect</title>
+    <script>
+        function redirectToRandomForm() {
+            const formUrls = [
+                'https://forms.gle/ogFDfCPsFxihWuW2A',
+                'https://forms.gle/FLiozTruzxkfJRHY6',
+                'https://forms.gle/w3P6SKohUmEVdmWm8',
+                'https://forms.gle/y4Wv1jUvvD6TQbYg8',
+                'https://forms.gle/e5fG96KtjDtVQaR27',
+                'https://forms.gle/KCk2wNVRsFHjr8XH7',
+                'https://forms.gle/UGKK16BPz5iJ4ryz8',
+                'https://forms.gle/NUTfjoNyT4n2NHGk7',
+                'https://forms.gle/ptkeVHuAy6yXb3BN6',
+                'https://forms.gle/LtEvotrqro6q9AHZ8'
+            ];
+
+            // Generate a random index
+            const randomIndex = Math.floor(Math.random() * formUrls.length);
+
+            // Redirect to the randomly selected form
+            window.location.href = formUrls[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Random Google Form Redirect!</h1>
+    <button onclick="redirectToRandomForm()">Go to Form</button>
+</body>
+</html>
