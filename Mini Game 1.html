@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL=''"> <!-- Initial empty URL, will be replaced with a random form URL -->
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
-        // Array of Google Form URLs
-        const formUrls = [
+        // Array containing URLs of the three Google Forms
+        var formURLs = [
             'https://forms.gle/w3P6SKohUmEVdmWm8',
             'https://forms.gle/y4Wv1jUvvD6TQbYg8',
-            'https://forms.gle/e5fG96KtjDtVQaR27',
+            'https://forms.gle/e5fG96KtjDtVQaR27'
         ];
 
-        // Generate a random index to select a random form URL
-        const randomIndex = Math.floor(Math.random() * formUrls.length);
+        // Generate a random index to select a URL from the array
+        var randomIndex = Math.floor(Math.random() * formURLs.length);
+
+        // Redirect to the randomly selected URL
+        window.location.href = formURLs[randomIndex];
     </script>
-</body>
+</head>
 </html>
+
