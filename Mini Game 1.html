@@ -15,9 +15,6 @@
 
         // Generate a random index to select a random form URL
         const randomIndex = Math.floor(Math.random() * formUrls.length);
-
-        // Set the URL in the meta tag to redirect to the randomly selected form URL
-        document.querySelector('meta[http-equiv="refresh"]').setAttribute('content', '0; URL=' + formUrls[randomIndex]);
     </script>
 </body>
 </html>
