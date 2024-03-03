@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0; URL=''"> <!-- Initial empty URL, will be replaced with a random form URL -->
-    <title>Redirecting to Google Form...</title>
 </head>
 <body>
     <script>
@@ -16,13 +15,7 @@
 
         // Generate a random index to select a random form URL
         const randomIndex = Math.floor(Math.random() * formUrls.length);
-        
-        // Get the URL element to set the href attribute
-        const formLink = document.getElementById('formLink');
 
-        // Set the href attribute of the link to the randomly selected form URL
-        formLink.setAttribute('href', formUrls[randomIndex]);
-        
         // Set the URL in the meta tag to redirect to the randomly selected form URL
         document.querySelector('meta[http-equiv="refresh"]').setAttribute('content', '0; URL=' + formUrls[randomIndex]);
     </script>
