@@ -11,8 +11,12 @@
     <script>
         // Function to redirect to the Google Form
         function redirectToForm() {
-            // Change the URL below to your new Google Form link
-            var googleFormURL = "https://forms.gle/kB2Vyjo12qoYmRM27";
+            // Change the base URL below to your Google Form link
+            var googleFormBaseURL = "https://forms.gle/KHG5VXLZRBvC7LcFA";
+            
+            // Append a unique timestamp as a query parameter
+            var timestamp = new Date().getTime();
+            var googleFormURL = googleFormBaseURL + "&timestamp=" + timestamp;
             
             // Redirect the user to the Google Form
             window.location.href = googleFormURL;
