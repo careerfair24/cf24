@@ -9,11 +9,17 @@
 </head>
 <body>
     <script>
-        // Change the URL below to your Google Form link
-        var googleFormURL = "https://forms.gle/kB2Vyjo12qoYmRM27";
-        
-        // Redirect the user to the Google Form
-        window.location.replace(googleFormURL);
+        // Function to redirect to the Google Form
+        function redirectToForm() {
+            // Change the URL below to your new Google Form link
+            var googleFormURL = "https://forms.gle/kB2Vyjo12qoYmRM27";
+            
+            // Redirect the user to the Google Form
+            window.location.replace(googleFormURL);
+        }
+
+        // Call the function to redirect to the form
+        redirectToForm();
     </script>
 </body>
 </html>
